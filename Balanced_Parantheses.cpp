@@ -13,6 +13,7 @@ bool matching (char a, char b){
         return true;
     }
     return false;
+    
 }
 bool solve(string str){
     stack <int> s;
