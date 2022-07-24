@@ -25,11 +25,14 @@ bool solve(string str){
                 return false;
             }
             else if (matching(s.top(),str[i])==false){
-
+                return false;
+            }
+            else{
+                s.pop();
             }
         }
     }
-
+    return(s.empty()==true);
 }
 int main(){ 
     ios_base::sync_with_stdio(false);
@@ -40,7 +43,7 @@ int main(){
     // long long int t;
     // cin>>t;
     // while(t--){
-        solve(str);
+        cout<<solve(str)<<"\n";
     //}
 return 0;
 }
